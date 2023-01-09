@@ -6,16 +6,27 @@
 .structure {
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;
+    justify-content: center;
     justify-items: center;
+    align-items: center;
     height: 100vh;
-    width: 100vh;
+    width: 100%;
+    
 }
-.structure input {
+.structure h1 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    justify-items: center;
+    margin-bottom: 20px;
+    text-shadow: black 0.1em 0.1em 0.2em
+
+}
+.structure button, input {
+    display: flex;    
+    background-color: aqua;
+    border-style: none;
+    justify-content: center;
+}
+.structure input {
     border: 2px fixed;
     border-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -23,6 +34,9 @@
     padding: 4px;
     min-width: 300px;
     min-height: 25px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .structure button {
@@ -34,14 +48,29 @@
     min-width: 309px;
     min-height: 25px;
     cursor: pointer;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 .structure button:hover {
     background-color: aquamarine;
 }
 
-.structure button, input {
-    background-color: aqua;
-    border-style: none;
+
+.structure img {
+    padding: 0;
+    margin:0;
+    width: px;
+    height: 250px;
+    border-radius: 150px;
 }
 
-
+@media (max-width:650px){
+    .structure {
+        grid-template-columns: auto;
+        grid-column-start: 1; 
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+}
