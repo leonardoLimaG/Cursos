@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.structure {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    width: 100vh;
+}
+.structure input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border: 2px fixed;
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 3px;
+    padding: 4px;
+    min-width: 300px;
+    min-height: 25px;
+}
+
+.structure button {
+    border: 2px fixed;
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 3px;
+    padding: 4px;
+    min-width: 309px;
+    min-height: 25px;
+    cursor: pointer;
+}
+.structure button:hover {
+    background-color: aquamarine;
+}
+
+.structure button, input {
+    background-color: aqua;
+    border-style: none;
+}
+
+
